@@ -1,114 +1,38 @@
-# HTML Editor
+# Web/Mobile HTML Builder & Editor 🚀
+### No-code HTML builder for your web and mobile apps based on [DaisyUI](https://daisyui.com/docs/install/) and [Tailwind](https://tailwindcss.com/docs).
 
-[DEMO](##)
-> **Provide a live demo of your plugin**
-For a better user engagement create a simple live demo by using services like [JSFiddle](https://jsfiddle.net) [CodeSandbox](https://codesandbox.io) [CodePen](https://codepen.io) and link it here in your README (attaching a screenshot/gif will also be a plus).
-To help you in this process here below you will find the necessary HTML/CSS/JS, so it just a matter of copy-pasting on some of those services. After that delete this part and update the link above
+###### Built for you by [Vocamen](https://www.vocamen.com) with love 🤍
+# 
+Feel free to use as-is, and contribute (it's really easy):
 
-### HTML
-```html
-<link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
-<script src="https://unpkg.com/grapesjs"></script>
-<script src="https://unpkg.com/grapesjs-daisyui-tailwind-html-editor"></script>
-
-<div id="gjs"></div>
-```
-
-### JS
-```js
-const editor = grapesjs.init({
-	container: '#gjs',
-  height: '100%',
-  fromElement: true,
-  storageManager: false,
-  plugins: ['grapesjs-daisyui-tailwind-html-editor'],
-});
-```
-
-### CSS
-```css
-body, html {
-  margin: 0;
-  height: 100%;
-}
-```
-
+🥇[ONLINE BUILDER](https://html-builder.vocamen.com)
 
 ## Summary
+`TL;DR` Simply click ONLINE BUILDER and start building your HTML page.
 
-* Plugin name: `grapesjs-daisyui-tailwind-html-editor`
-* Components
-    * `component-id-1`
-    * `component-id-2`
-    * ...
-* Blocks
-    * `block-id-1`
-    * `block-id-2`
-    * ...
+-- Currently, to change components content click the component settings (cog wheel) then use this ugly hack: click "update" then add a character to the following input, then hit "tab" to update your component. 
+Feel free to provide a better way --
 
+Click the `</>` button to inspect and copy your HTML and CSS.
+Paste code in your app and don't forget to add DaisyUI and Tailwind CSS in your html page, in the `header`:
+```html
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.38.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+```
+Auto-saves on your browser, no need to save!
 
+## 🥰 PR are welcome!
 
-## Options
-
-| Option | Description | Default |
-|-|-|-
-| `option1` | Description option | `default value` |
-
-
+If you'd like to contribute but don't want to download and install stuff, simply FORK this repository and change `blocks.js` and `components.js` in `src/`, then PR (Pull Request) from your fork to this project.
 
 ## Download
 
 * CDN
-  * `https://unpkg.com/grapesjs-daisyui-tailwind-html-editor`
-* NPM
-  * `npm i grapesjs-daisyui-tailwind-html-editor`
+  * `https://unpkg.com/web-mobile-html-builder`
+* NPM (not sure)
+  * `npm i web-mobile-html-builder`
 * GIT
-  * `git clone https://github.com/YOUR-USERNAME/grapesjs-daisyui-tailwind-html-editor.git`
-
-
-
-## Usage
-
-Directly in the browser
-```html
-<link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
-<script src="https://unpkg.com/grapesjs"></script>
-<script src="path/to/grapesjs-daisyui-tailwind-html-editor.min.js"></script>
-
-<div id="gjs"></div>
-
-<script type="text/javascript">
-  var editor = grapesjs.init({
-      container: '#gjs',
-      // ...
-      plugins: ['grapesjs-daisyui-tailwind-html-editor'],
-      pluginsOpts: {
-        'grapesjs-daisyui-tailwind-html-editor': { /* options */ }
-      }
-  });
-</script>
-```
-
-Modern javascript
-```js
-import grapesjs from 'grapesjs';
-import plugin from 'grapesjs-daisyui-tailwind-html-editor';
-import 'grapesjs/dist/css/grapes.min.css';
-
-const editor = grapesjs.init({
-  container : '#gjs',
-  // ...
-  plugins: [plugin],
-  pluginsOpts: {
-    [plugin]: { /* options */ }
-  }
-  // or
-  plugins: [
-    editor => plugin(editor, { /* options */ }),
-  ],
-});
-```
-
+  * `git clone https://github.com/vocamen/web-mobile-html-builder.git`
 
 
 ## Development
@@ -116,29 +40,41 @@ const editor = grapesjs.init({
 Clone the repository
 
 ```sh
-$ git clone https://github.com/YOUR-USERNAME/grapesjs-daisyui-tailwind-html-editor.git
-$ cd grapesjs-daisyui-tailwind-html-editor
+git clone --depth 1 https://github.com/vocamen/web-mobile-html-builder.git
+cd web-mobile-html-builder
 ```
 
-Install dependencies
+### Install dependencies
 
 ```sh
-$ npm i
+npm i
+npm i -g grapesjs-cli
+(you will need this one to test and build easily)
 ```
 
-Start the dev server
+### Start the dev server
 
 ```sh
-$ npm start
+npx grapesjs-cli serve
 ```
 
-Build the source
+### Tweak
+
+Simply change 2 files in `src/`
+
+* components.js (the HTML code in your page)
+* blocks.js (the menu elements to drag in your HTML page)
+
+### Build the source
 
 ```sh
-$ npm run build
+npx grapesjs-cli build
 ```
 
-
+### Test your project before PR
+```sh
+http-server ./dist/
+```
 
 ## License
 
