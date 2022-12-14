@@ -1,3 +1,4 @@
+![palette](palette.jpg)
 # Web/Mobile HTML Builder & Editor 🚀
 ### No-code HTML builder for your web and mobile apps based on [DaisyUI](https://daisyui.com/docs/install/) and [Tailwind](https://tailwindcss.com/docs).
 
