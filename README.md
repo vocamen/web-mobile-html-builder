@@ -1,7 +1,7 @@
 # Web/Mobile HTML Builder & Editor 🚀
 ### No-code HTML builder for your web and mobile apps based on [DaisyUI](https://daisyui.com/docs/install/) and [Tailwind](https://tailwindcss.com/docs).
 
-###### Built for you by [Vocamen](https://www.vocamen.com) with love 🤍
+###### Built for you by [Vocamen](https://www.vocamen.com/dist/) with love 🤍
 # 
 Feel free to use as-is, and contribute (it's really easy):
 
