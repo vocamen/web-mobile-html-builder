@@ -1,0 +1,39 @@
+{
+  "name": "grapesjs-daisyui-tailwind-html-editor",
+  "version": "0.0.2",
+  "description": "Online Web and Mobile HTML Builder using daisyui, tailwind and grapejs in a 40kB box!",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j2l/web-mobile-html-builder.git"
+  },
+  "scripts": {
+    "start": "http-server ./dist/",
+    "build": "grapesjs-cli build",
+    "bump": "npm version patch -m 'Bump v%s'"
+  },
+  "keywords": [
+    "daisyui",
+    "daisy",
+    "tailwindcss",
+    "tailwind",
+    "drag-and-drop",
+    "website-builder",
+    "mobile-builder",
+    "app-builder",
+    "html-builder",
+    "html-editor",
+    "page-builder",
+    "html-builder",
+    "site-generator", 
+    "site-builder",
+    "grapesjs",
+    "ui-builder", 
+    "no-code", 
+    "nocode"
+  ],
+  "devDependencies": {
+    "grapesjs-cli": "^3.0.1"
+  },
+  "license": "MIT"
+}
