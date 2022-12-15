@@ -1,6 +1,6 @@
 {
   "name": "grapesjs-daisyui-tailwind-html-editor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Online Web and Mobile HTML Builder using daisyui, tailwind and grapejs in a 40kB box!",
   "main": "dist/index.js",
   "repository": {
@@ -23,11 +23,11 @@
     "html-builder",
     "html-editor",
     "page-builder",
-    "site-generator", 
+    "site-generator",
     "site-builder",
     "grapesjs",
-    "ui-builder", 
-    "no-code", 
+    "ui-builder",
+    "no-code",
     "nocode"
   ],
   "devDependencies": {

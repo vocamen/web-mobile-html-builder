@@ -6,8 +6,9 @@
     <link href="https://cdn.jsdelivr.net/npm/grapesjs@0.20.1/dist/css/grapes.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.38.1/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" type="text/css" /> -->
-        <link href="https://cdn.jsdelivr.net/gh/smarttechmukesh/assets/css/tailwindcss_v3.1.6.min.css rel="stylesheet" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/gh/smarttechmukesh/assets/css/tailwindcss_v3.1.6.min.css rel="stylesheet" type="text/css" />        
     <script src="https://cdn.jsdelivr.net/npm/grapesjs@0.20.1/dist/grapes.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/artf/grapesjs-plugin-export/dist/index.js"></script>
     <style>
       body,
       html {
@@ -63,7 +64,7 @@
           showOffsets: true,
           fromElement: true,
           noticeOnUnload: false,
-          plugins: ['grapesjs-daisyui-tailwind-html-editor'],
+          plugins: ['grapesjs-plugin-export', 'grapesjs-daisyui-tailwind-html-editor'],
           pluginsOpts: {
             'grapesjs-daisyui-tailwind-html-editor': { /* Test here your options  */ }
           },
