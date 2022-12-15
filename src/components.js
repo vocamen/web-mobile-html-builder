@@ -29,7 +29,8 @@ export default (editor, opts = {}) => {
   domc.addType('tw-container', {
     model: {
       defaults: {
-        content: `container`,
+        content: `.`,
+        traits: ['id','title',{ label: 'text', type: 'text', name: 'content', changeProp: true }],
         attributes: { class: 'container mx-auto' }
       },
     },
@@ -40,8 +41,36 @@ export default (editor, opts = {}) => {
   domc.addType('tw-columns', {
     model: {
       defaults: {
-        content: `<div>col1</div><div>col2</div><div>col3</div>`,
-        attributes: { class: 'columns-3xs gap-8' }
+        content: `.`,
+        traits: ['id','title',{ label: 'text', type: 'text', name: 'content', changeProp: true }],
+        attributes: { class: 'flex gap-8' },
+        tagName:'div'
+      },
+    },
+    view: {
+
+    },
+  });
+  domc.addType('tw-column', {
+    model: {
+      defaults: {
+        content: `.`,
+        traits: ['id','title',{ label: 'text', type: 'text', name: 'content', changeProp: true }],
+        attributes: { class: 'w-full' },
+        tagName:'div'
+      },
+    },
+    view: {
+
+    },
+  });
+  domc.addType('tw-paragraph', {
+    model: {
+      defaults: {
+        content: `text`,
+        traits: ['id','title',{ label: 'text', type: 'text', name: 'content', changeProp: true }],
+        attributes: { class: 'text-justify' },
+        tagName:'p'
       },
     },
     view: {

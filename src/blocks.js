@@ -12,10 +12,22 @@ export default (editor, opts = {}) => {
   bm.add('tw-columns', {
     category: 'Tailwind',
     label: 'TW columns',
-    content: { type: 'tw-columns'}, //, content: `<div>&nbsp</div><div>&nbsp</div><div>&nbsp</div>`
+    content: { type: 'tw-columns'},
     media: `<svg viewBox="0 0 23 24">
     <path fill="currentColor" d="M2 20h4V4H2v16Zm-1 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1ZM17 20h4V4h-4v16Zm-1 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1ZM9.5 20h4V4h-4v16Zm-1 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1Z"/>
   </svg>`,
+  });
+  bm.add('tw-column', {
+    category: 'Tailwind',
+    label: 'TW column',
+    content: { type: 'tw-column'}, 
+    media: `column`,
+  });
+  bm.add('tw-paragraph', {
+    category: 'Tailwind',
+    label: 'TW paragraph',
+    content: { type: 'tw-paragraph'}, 
+    media: `TEXT`,
   });
   bm.add('d-button', {
     category: 'Actions',
