@@ -375,6 +375,13 @@ export default (editor, opts = {}) => {
     content: { type: 'daisy-Phone' },
     media: 'Phone',
   });
+  bm.add('d-camera', {
+    category: 'Mockup',
+    name: 'd-camera',
+    label: 'Daisy camera',
+    content: { type: 'daisy-camera' },
+    media: 'camera',
+  });
   bm.add('d-Window', {
     category: 'Mockup',
     name: 'd-Window',

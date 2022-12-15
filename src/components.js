@@ -31,7 +31,7 @@ export default (editor, opts = {}) => {
       defaults: {
         content: `.`,
         traits: ['id','title',{ label: 'text', type: 'text', name: 'content', changeProp: true }],
-        attributes: { class: 'container mx-auto' }
+        attributes: { class: 'container mx-auto flex justify-center p-4' }
       },
     },
     view: {
@@ -481,11 +481,11 @@ export default (editor, opts = {}) => {
   domc.addType('daisy-Radio', {
     model: {
       defaults: {
-        traits: ['id','title',{ label: 'Radio code', type: 'textarea', name: 'content', changeProp: true }],
-        content: `<input type="radio" name="radio-1" class="radio" checked />
-        <input type="radio" name="radio-1" class="radio" />`,
-        tagName:'div',
+        traits: ['id','title',{ label: 'Radio code', type: 'text', name: 'content', changeProp: true }],
+        content: `.`,
+        tagName:'input',
         editable: true,
+        attributes: { class: 'radio' }
       },
     },
     view: {
@@ -551,10 +551,11 @@ export default (editor, opts = {}) => {
   domc.addType('daisy-Input', {
     model: {
       defaults: {
-        traits: ['id','title',{ label: 'Input code', type: 'textarea', name: 'content', changeProp: true }],
-        content: `<input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />`,
+        traits: ['id','title', 'placeholder',{ label: 'Input value', type: 'text', name: 'content', changeProp: true }],
+        content: `.`,
         tagName:'input',
         editable: true,
+        attributes: { class: 'input input-bordered w-full max-w-xs' }
       },
     },
     view: {
@@ -591,9 +592,10 @@ export default (editor, opts = {}) => {
     model: {
       defaults: {
         traits: ['id','title',{ label: 'Artboard code', type: 'textarea', name: 'content', changeProp: true }],
-        content: `<div class="artboard artboard-horizontal phone-1">568×320</div>`,
-        tagName:'input',
+        content: `568×320`,
+        tagName:'div',
         editable: true,
+        attributes: { class: 'artboard artboard-horizontal phone-1' }
       },
     },
     view: {
@@ -984,14 +986,24 @@ export default (editor, opts = {}) => {
     model: {
       defaults: {
         traits: ['id','title',{ label: 'Phone code', type: 'textarea', name: 'content', changeProp: true }],
-        content: `<div class="mockup-phone">
-        <div class="camera"></div> 
-        <div class="display">
-          <div class="artboard artboard-demo phone-1">Hi.</div>
-        </div>
-      </div>`,
+        content: `.`,
         tagName:'div',
         editable: true,
+        attributes: { class: 'mockup-phone border bg-base-300' }
+      },
+    },
+    view: {
+
+    },
+  });
+  domc.addType('daisy-camera', {
+    model: {
+      defaults: {
+        traits: ['id','title'],
+        content: ``,
+        tagName:'div',
+        editable: true,
+        attributes: { class: 'camera' }
       },
     },
     view: {
@@ -1002,11 +1014,10 @@ export default (editor, opts = {}) => {
     model: {
       defaults: {
         traits: ['id','title',{ label: 'Window code', type: 'textarea', name: 'content', changeProp: true }],
-        content: `<div class="mockup-window border bg-base-300">
-        <div class="flex justify-center px-4 py-16 bg-base-200">Hello!</div>
-      </div>`,
+        content: `.`,
         tagName:'div',
         editable: true,
+        attributes: { class: 'mockup-window border bg-base-300' }
       },
     },
     view: {
